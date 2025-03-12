@@ -40,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,12 +103,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_up-Photoroom_0
+      name: Player_up-_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 0
         y: 0
-        width: 25
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -116,21 +116,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9cb86607d122e0380800000000000000
-      internalID: -9003221095231878199
+      spriteID: 1ec836440945485479edc030b00c2bf5
+      internalID: 2142863357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_up-Photoroom_1
+      name: Player_up-_1
       rect:
         serializedVersion: 2
-        x: 36
+        x: 32
         y: 0
-        width: 25
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -138,10 +138,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9e68d8ded67921f90800000000000000
-      internalID: -6984353573705513239
+      spriteID: 7e750fc6dc6bf02418d3c3fc23549bd5
+      internalID: -2093184703
       vertices: []
       indices: 
       edges: []
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 397d05b741a3a304ba811fa2420855ff
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Player_up-Photoroom_0: -9003221095231878199
-      Player_up-Photoroom_1: -6984353573705513239
+      Player_up-_0: 2142863357
+      Player_up-_1: -2093184703
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "MBasic_Bullet2 - \u1107\u1169\u11A8\u1109\u1161\u1107\u1169\u11AB (3)_0": 1247229519246951933
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
