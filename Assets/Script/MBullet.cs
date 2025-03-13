@@ -3,6 +3,9 @@ using UnityEngine;
 public class MBullet : MonoBehaviour
 {
     public float speed = 3f;
+    //공격력
+    //이펙트
+        
     void Start()
     {
         

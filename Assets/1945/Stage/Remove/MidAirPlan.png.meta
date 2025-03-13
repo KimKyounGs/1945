@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 89cdce17670fe45d6b572dfc741a70e2
+guid: b38736bf6ef103b4a938401c0a605ff7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 567169438633345061
-    second: Effect_3_0
+      213: -8748255612503774959
+    second: MidAirPlan_0
+  - first:
+      213: 1905298522491951623
+    second: MidAirPlan_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Effect_3_0
+      name: MidAirPlan_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1040
-        height: 65
+        x: 3
+        y: 5
+        width: 302
+        height: 330
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 520c235799dfed700800000000000000
-      internalID: 567169438633345061
+      spriteID: 1192564eed3f79680800000000000000
+      internalID: -8748255612503774959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MidAirPlan_1
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 5
+        width: 302
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70a953859eaf07a10800000000000000
+      internalID: 1905298522491951623
       vertices: []
       indices: 
       edges: []
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Effect_3_0: 567169438633345061
+      MidAirPlan_0: -8748255612503774959
+      MidAirPlan_1: 1905298522491951623
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
