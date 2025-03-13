@@ -6,6 +6,11 @@ public class Player : MonoBehaviour
     private Vector2 minBounds;
     private Vector2 maxBounds;
 
+    // 총알
+    public GameObject bullet;  //총알 추후 4개 배열로 만들예정
+    public Transform pos = null;
+
+
     Animator ani; //애니메이터를 가져올 변수
 
     void Start()
@@ -22,6 +27,13 @@ public class Player : MonoBehaviour
     }
 
     void Update()
+    {
+        Move();
+        Shoot();
+
+    }
+
+    void Move()
     {
         // 플레이어 이동
         float moveX = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
@@ -58,5 +70,16 @@ public class Player : MonoBehaviour
         newPosition.y = Mathf.Clamp(newPosition.y, minBounds.y, maxBounds.y);
 
         transform.position = newPosition;
+
+    }
+
+    void Shoot()
+    {
+        //스페이스
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            //프리팹 위치 방향 넣고 생성
+            Instantiate(bullet, pos.position, Quaternion.identity);
+        }
     }
 }
