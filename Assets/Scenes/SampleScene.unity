@@ -699,8 +699,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  bullet: {fileID: 1760708886876018348, guid: c6d8ff420bb9a4d0688a3b343589b28a, type: 3}
+  bullet:
+  - {fileID: 1760708886876018348, guid: c6d8ff420bb9a4d0688a3b343589b28a, type: 3}
+  - {fileID: 4634910154861715818, guid: d54ee575fdea9462e9a7ce4ed0f181d7, type: 3}
+  - {fileID: 1140311958238705546, guid: 88b7cf127dd924e96ac104c7cceb2794, type: 3}
+  - {fileID: 2115272432628765728, guid: b767c664d7506407ea686a09169bf072, type: 3}
   pos: {fileID: 1994397230}
+  power: 0
+  powerUpEffect: {fileID: 2933494422072777167, guid: bcc36fc717a4a4fc5911a622806cb5fd, type: 3}
 --- !u!60 &817984976
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -731,7 +737,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

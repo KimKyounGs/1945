@@ -28,8 +28,8 @@ public class PBullet : MonoBehaviour
             // 1초뒤에 지우기
             Destroy(impact, 1f);
 
-            //몬스터
-            Destroy(collision.gameObject);
+            //몬스터삭제
+            collision.gameObject.GetComponent<Monster>().Damage(1);
             
             //미사일 삭제
             Destroy(gameObject);
