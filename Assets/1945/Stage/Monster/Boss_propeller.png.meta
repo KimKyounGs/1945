@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2f2d96a1bdab14e1aa311ede37413a78
+guid: 094e85294eb26824698fc5bbdd77c71b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2662275010180387051
-    second: Effect_Power_0
+      213: -1402673726238237314
+    second: Boss_propeller_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Effect_Power_0
+      name: Boss_propeller_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 642
-        height: 120
+        width: 704
+        height: 181
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be09334340d42f420800000000000000
-      internalID: 2662275010180387051
+      spriteID: e7ddbcb7da3b88ce0800000000000000
+      internalID: -1402673726238237314
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Effect_Power_0: 2662275010180387051
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
