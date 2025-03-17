@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
 
     // 총알
     public GameObject[] bullet;  //총알 추후 4개 배열로 만들예정
-    public Transform pos = null;
+    public Transform bulletPos = null;
     public int power = 0;
 
     [SerializeField]
@@ -18,6 +18,10 @@ public class Player : MonoBehaviour
 
 
     Animator ani; //애니메이터를 가져올 변수
+
+        //레이져
+    public GameObject lazer;
+    public float gValue = 0;
 
     void Start()
     {
@@ -67,6 +71,36 @@ public class Player : MonoBehaviour
             ani.SetBool("up", false);
         }
 
+        //스페이스
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            //프리팹 위치 방향 넣고 생성
+            Instantiate(bullet[power], bulletPos.position, Quaternion.identity);
+        }
+        else if(Input.GetKey(KeyCode.Space))
+        {
+            gValue += Time.deltaTime;
+
+
+            if(gValue >=1)
+            {
+                GameObject go = Instantiate(lazer, bulletPos.position, Quaternion.identity);
+                Destroy(go, 3);
+                gValue = 0;
+            }
+        }
+        else
+        {
+            gValue -= Time.deltaTime;
+
+            if(gValue <=0)
+            {
+                gValue = 0;
+            }
+
+
+        }
+
 
 
         Vector3 newPosition = transform.position + new Vector3(moveX, moveY, 0);
@@ -85,7 +119,7 @@ public class Player : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
         {
             //프리팹 위치 방향 넣고 생성
-            Instantiate(bullet[power], pos.position, Quaternion.identity);
+            Instantiate(bullet[power], bulletPos.position, Quaternion.identity);
         }
     }
 
