@@ -15,9 +15,15 @@ public class Boss : MonoBehaviour
 
     void Start()
     {
+        Invoke("Hide", 2); //1초뒤에 보스워닝 꺼줘
         StartCoroutine(BossMissle());
         StartCoroutine(CircleFire());
 
+    }
+
+    void Hide()
+    {
+        GameObject.Find("TextBossWarning").SetActive(false);
     }
 
     IEnumerator BossMissle()
@@ -31,9 +37,6 @@ public class Boss : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
         }
     }
-
-
-
 
       //원방향으로 미사일 발사
      IEnumerator CircleFire()

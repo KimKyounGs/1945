@@ -15,6 +15,7 @@ public class Lazer : MonoBehaviour
     
     void Update()
     {
+
         transform.position = pos.position;
     }
 
